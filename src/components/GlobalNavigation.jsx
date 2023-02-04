@@ -13,14 +13,15 @@ import logo from '../logo.svg';
 
 const GlobalNavigation = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="primary " expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">
         <img
               src={logo}
               width="30"
               height="30"
-              className="d-inline-block align-top"
+              
+              className="d-inline-block align-top "
               alt="React Bootstrap logo"
             />
         </Navbar.Brand>
@@ -32,8 +33,8 @@ const GlobalNavigation = () => {
             navbarScroll
           >
             <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/project-list">Projects</Nav.Link>
-            <Nav.Link href="/blog-list">Projects</Nav.Link>
+            <Nav.Link href="/project-list">Profile</Nav.Link>
+            <Nav.Link href="/blog-list">Blog</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
@@ -49,15 +50,7 @@ const GlobalNavigation = () => {
               Link
             </Nav.Link> */}
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>

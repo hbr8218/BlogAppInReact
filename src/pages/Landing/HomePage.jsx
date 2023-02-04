@@ -1,52 +1,42 @@
 import React from 'react'
+import '../../css/home.css'
+// import * as ai from 'react-icons/ai'
 
-
-import Carousel from 'react-bootstrap/Carousel';
-
-const HomePage = () => {
+const Home = () => {
   return (
-    <div>
-      <Carousel>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/777655/react-context-api-4929b3703a1a7082d99b53eb1bbfc31f.png"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/777655/react-context-api-4929b3703a1a7082d99b53eb1bbfc31f.png"
-          alt="Second slide"
-        />
+    <>
+      <section className='hom'>
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYitI6G6Vt9SPmsU1gzDoQ3xNV_LgZiINSf_OabNwDG4keYRU4vySovSHjPsDGfgCfX1w&usqp=CAU"
-          alt="Third slide"
-        />
+        <div className="container-fluid h-wrapper ">
+          <div className="row">
 
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-    </div>
+            <div className="col-md-6 h-left">
+              <h4> Hello  i m,
+                <span>
+              
+              <h1>MOHAMMAD Akthar </h1>
+              </span>
+              </h4>
+
+                <h2>Web Developer</h2>
+              < span><h5>I'm software engineer specializing in web development <br />and UX|UI desiginer exceptional digital experiences.</h5></span>
+              <div className='buttons'>
+                <button className='btn-button'>More</button>
+
+              </div>
+            </div>
+
+            <div className="col-md-6"></div>
+          </div>
+
+
+
+        </div>
+        
+      </section>
+
+    </>
   )
 }
 
-export default HomePage
+export default Home

@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.fluid{
+  background-color: #61dafb;
+}
+.mm{
+  display: flex;
+  background-color: aqua;
+}
+.h-1{
+  font-size: large;
+}

@@ -1,5 +1,5 @@
 import React, { lazy } from 'react'
-import {BrowserRouter ,Routes, Route} from "react-router-dom"
+import {HashRouter as Router ,Routes, Route} from "react-router-dom"
 
 
 
@@ -14,7 +14,7 @@ const NotFound = lazy( () => import('../pages/NotFound'))
 
 const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <Router>
         <Routes>
             {/* Landing page route*/}
             <Route exact path="/" element={<HomePage />} />
@@ -31,7 +31,7 @@ const AppRouter = () => {
             <Route path='*' element={<NotFound />} />
 
         </Routes>
-    </BrowserRouter>
+    </Router>
   )
 }
 
